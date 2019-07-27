@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <button onclick="countMore()"> More</button>
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="count"> </p>
+
+
+    <script>
+        // var list=document.getElementsByTagName('P');
+        // for(i=0; i< list.length;i++)
+        // {
+        //     if(list[i].className==='foo')
+        //     {
+        //         var temp=list[i].textContent.concat('topkyocoder');
+        //         list[i].textContent=temp;
+        //     }
+        // }
+        var count = 0;
+var counter = document.getElementById('count');
+counter.innerHTML = count;
+var count = 0;
+        var counter = document.getElementById('count');
+        counter.innerHTML=count;
+        function countMore() {
+            count++;
+            document.getElementById('count').innerHTML=count;
+        }
+        
+    </script>
+</body>
+
+</html>
